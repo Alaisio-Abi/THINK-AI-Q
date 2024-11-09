@@ -1,0 +1,80 @@
+import React from 'react';
+import { BookOpen, FileText, BarChart2, Trophy } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+
+const Dashboard = () => {
+  const [currentDay, setCurrentDay] = React.useState(1);
+  
+  const leaderboardData = [
+    { name: "Sarah Chen", points: 4250 },
+    { name: "Current User", points: 4100 },
+    { name: "Miguel Rodriguez", points: 3980 }
+  ];
+
+  return (
+    <div className="max-w-3xl mx-auto p-6 space-y-6">
+      {/* Header */}
+      <div className="flex justify-between items-center">
+        <h1 className="text-2xl font-bold text-teal-600">Learning Dashboard</h1>
+        <div className="p-2">
+          <button className="p-2 hover:bg-gray-100 rounded-full">
+            <BookOpen className="h-6 w-6 text-teal-600" />
+          </button>
+        </div>
+      </div>
+
+      {/* Day Counter */}
+      <Card className="bg-white">
+        <CardContent className="p-6 text-center">
+          <div className="relative inline-block">
+            <div className="w-32 h-32 rounded-full border-4 border-teal-500 flex items-center justify-center">
+              <span className="text-4xl font-bold text-teal-600">Day {currentDay}</span>
+            </div>
+            <div className="mt-2 text-sm text-teal-600">+50 points for consistent learning</div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Action Buttons */}
+      <div className="grid grid-cols-3 gap-4">
+        <button onClick={() => alert('Starting new lesson...')} 
+                className="p-4 bg-purple-100 rounded-lg hover:bg-purple-200 flex flex-col items-center">
+          <BookOpen className="h-6 w-6 text-purple-600 mb-2" />
+          <span className="text-purple-600">Start Lesson</span>
+        </button>
+        
+        <button onClick={() => alert('Viewing summary...')}
+                className="p-4 bg-purple-100 rounded-lg hover:bg-purple-200 flex flex-col items-center">
+          <FileText className="h-6 w-6 text-purple-600 mb-2" />
+          <span className="text-purple-600">Summary</span>
+        </button>
+        
+        <button onClick={() => alert('Viewing statistics...')}
+                className="p-4 bg-purple-100 rounded-lg hover:bg-purple-200 flex flex-col items-center">
+          <BarChart2 className="h-6 w-6 text-purple-600 mb-2" />
+          <span className="text-purple-600">Statistics</span>
+        </button>
+      </div>
+
+      {/* Leaderboard */}
+      <Card>
+        <CardContent className="p-4">
+          <div className="flex items-center mb-4">
+            <Trophy className="h-5 w-5 text-amber-500 mr-2" />
+            <h2 className="text-xl font-semibold text-amber-500">Leaderboard</h2>
+          </div>
+          <div className="space-y-3">
+            {leaderboardData.map((user, index) => (
+              <div key={index} className="flex justify-between items-center p-2 bg-amber-50 rounded-lg">
+                <span className={user.name === "Current User" ? "font-bold" : ""}>{user.name}</span>
+                <span className="text-gray-600">{user.points} points</span>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  );
+};
+
+export default Dashboard;
