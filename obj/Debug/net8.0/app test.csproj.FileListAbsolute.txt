@@ -1,0 +1,14 @@
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\bin\Debug\net8.0\app test.exe
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\bin\Debug\net8.0\app test.deps.json
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\bin\Debug\net8.0\app test.runtimeconfig.json
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\bin\Debug\net8.0\app test.dll
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\bin\Debug\net8.0\app test.pdb
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.dll
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\refint\app test.dll
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.pdb
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\app test.genruntimeconfig.cache
+C:\Users\ADMIN\Desktop\VS Code Projects\Inversity\app test\obj\Debug\net8.0\ref\app test.dll
